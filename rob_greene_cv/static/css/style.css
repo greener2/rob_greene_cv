@@ -12,24 +12,22 @@ body {
     line-height: 1.6;
 }
 
-ul {
-    list-style-type: none;
-}
-
 a {
     text-decoration: none;
     color: #fff;
 }
 
-h1, h2 {
+.title-bar h1, .title-bar h2 {
     font-weight: 300;
     line-height: 1.2;
     margin: 10px 0;
     color: #fff;
 }
 
+
 p {
     margin: 10px 0;
+    text-align: justify;
 }
 
 img {
@@ -52,21 +50,19 @@ img {
     display: grid;
     grid-template-columns: 25% 75%;
     justify-content: center;
-    gap: 20px;
-    height: 100%;
+    gap: 10px;
+    height: 100vh;
 }
 
 .navbar {
-    height: 100vh;
-    overflow: auto;
-}
-
-.navbar ul {
     background-color: #0a0038;
     line-height: 1.6;
     overflow: auto;
     font-variant: small-caps;
-    height: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
 }
 
 .navbar a {
@@ -81,9 +77,44 @@ img {
 .navbar a:hover {
     background-color: #13006b;
     transform: scale(1.05);
+    cursor: hover;
+}
+
+#content {
+    padding: 0 20px;
 }
 
 #content h1 {
     color: #333;
-    padding: 20px 0;
+    padding: 20px 20px;
+    font-size: 32px;
+}
+
+#content .face-img {
+    width: 250px;
+    display: inline;
+    float: left;
+    padding-right: 20px;
+}
+
+.job-entry {
+    border: 1px solid #333;
+    border-left: 8px solid #13006b;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.job-entry h2 {
+    color: #333;
+}
+
+.job-entry .date-range {
+    font-weight: 200;
+    font-style: italic;
+}
+
+.job-logo {
+    width: 100px;
+    float: left;
 }

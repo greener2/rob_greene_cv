@@ -15,21 +15,19 @@
             <h2 class="subtitle">Software Developer</h2>
         </div>
     </div>
-    <div class="navbar">
-        <div class="grid">
-            <nav>
-                <ul>
-                    <li><a hx-trigger="click" hx-swap="innerHTML" hx-target="#content" hx-get="/about-me">About Me</a></li>
-                    <li><a hx-trigger="click" hx-swap="innerHTML" hx-target="#content" hx-get="/prof-exp">Professional Experience</a></li>
-                    <li><a hx-trigger="click" hx-swap="innerHTML" hx-target="#content" hx-get="/skills">Skills</a></li>
-                    <li><a hx-trigger="click" hx-swap="innerHTML" hx-target="#content" hx-get="/education">Education</a></li>
-                    <li><a hx-trigger="click" hx-swap="innerHTML" hx-target="#content" hx-get="/hobbies">Hobbies & Interests</a></li>
-                    <li><a hx-trigger="click" hx-swap="innerHTML" hx-target="#content" hx-get="/contact">Contact</a></li>
-                </ul>
-            </nav>
-            <section id="content" hx-get="/about-me" hx-trigger="load">
-            </section>
-        </div>
+    <div class="grid">
+        <nav class="navbar">
+            <ul>
+                <li><a hx-trigger="click" hx-swap="innerHTML" hx-target="#content" hx-get="/about-me">About Me</a></li>
+                <li><a hx-trigger="click" hx-swap="innerHTML" hx-target="#content" hx-get="/prof-exp">Professional Experience</a></li>
+                <li><a hx-trigger="click" hx-swap="innerHTML" hx-target="#content" hx-get="/skills">Skills</a></li>
+                <li><a hx-trigger="click" hx-swap="innerHTML" hx-target="#content" hx-get="/education">Education</a></li>
+                <li><a hx-trigger="click" hx-swap="innerHTML" hx-target="#content" hx-get="/hobbies">Hobbies & Interests</a></li>
+                <li><a hx-trigger="click" hx-swap="innerHTML" hx-target="#content" hx-get="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="content" hx-get="/about-me" hx-trigger="load">
+        </section>
     </div>
     <script src="https://unpkg.com/htmx.org@1.6.1" integrity="sha384-tvG/2mnCFmGQzYC1Oh3qxQ7CkQ9kMzYjWZSNtrRZygHPDDqottzEJsqS4oUVodhW" crossorigin="anonymous"></script>
 </body>
